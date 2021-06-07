@@ -36,17 +36,19 @@ namespace CodeAcademy___Conditionals
 // or equal to the limit set in SaladMartLimit.
 
                  Console.WriteLine($"I have made the decision for you. Because there" +
-                 $" are {SaladMartNum} people currently in SaladMart, it is safe to " +
-                 $"attend within Covid19 Social Distancing Rules. Go and eat there.");
+                 $" are {SaladMartNum} people currently in SaladMart, this is equal to or less" +
+                 $" than the limit of people that can be in the restaurant, which is currently" +
+                 $" {SaladMartLimit}. It is safe to attend within Covid19 Social Distancing" +
+                 $" Rules. Go and eat there.");
                  }
                  else
                  {
 // this code block will execute if the amount of people in SaladMart exceeds the limit set
 // in SaladMartLimit.
-                 Console.WriteLine($"If you enter SaladMart, they will be exceeding the " +
-                  $"current number of people they can safely have in the shop under " +
-                  $"Covid19 Social Distancing Rules. Could you go to Rita's Jazz Cafe " +
-                  $"for your lunch instead?");
+                 Console.WriteLine($"Because there are {SaladMartNum} people already in " +
+                     $"SaladMart, this exceeds the limit of {SaladMartLimit}, which is " +
+                     $"the limit under current Covid19 Social Distancing Rules." +
+                     $" Could you go to Rita's Jazz Cafe for your lunch instead?");
                   }
               
             }
